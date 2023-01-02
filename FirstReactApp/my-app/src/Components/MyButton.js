@@ -9,7 +9,7 @@ const MyButton=()=>
 
         <Greetings name ="abhay"/>
         <Greetings firstname={personName}/>
-        <Greetings />
+        <Greetings name={personName}/>
         </div>
     )
 }
