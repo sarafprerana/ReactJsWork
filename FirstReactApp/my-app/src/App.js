@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Anew from './Components/Anew';
 
 function App() {
   return (
@@ -17,7 +17,9 @@ function App() {
           rel="noopener noreferrer"
         > 
           Welcome To GitHub
+        
         </a>
+      <Anew />
       </header>
     </div>
   );

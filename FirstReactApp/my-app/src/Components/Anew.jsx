@@ -1,6 +1,7 @@
 import React from 'react'
 import './Anew.css'
 import MyButton from './MyButton';
+import image from "../image/img2.jpg"
 
  function Anew() {
    function gret(name)
@@ -12,11 +13,12 @@ import MyButton from './MyButton';
    return new Date().getDate();
     }
   return (
-    <div class='d'>
+    <div className='d'>
       <h1><i>Welcome To Patheya Technology</i></h1>
       {gret("World")}
       {getTime()}
       <MyButton />
+      <img src={image} alt=" Image" width={200} height={200}></img> /
     </div>
   );
     
