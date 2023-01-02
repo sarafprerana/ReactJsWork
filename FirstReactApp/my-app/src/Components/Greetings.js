@@ -3,7 +3,7 @@
     return(
         <div>
                 {/* <p>This is Reactjs Session</p> */}
-               <pre> Hello,{props.firstname}{props.name}</pre> 
+               <pre> Hello {props.firstname} {props.name}</pre> 
             
         </div>
     );

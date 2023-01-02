@@ -18,7 +18,7 @@ import image from "../image/img2.jpg"
       {gret("World")}
       {getTime()}
       <MyButton />
-      <img src={image} alt=" Image" width={200} height={200}></img> /
+      <img src={image} alt="image" width={300} height={100}></img> 
     </div>
   );
     
