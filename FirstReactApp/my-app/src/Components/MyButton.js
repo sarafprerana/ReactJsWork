@@ -1,5 +1,5 @@
 import Greetings from "./Greetings";
-import './Avtar.jsx'
+
 const MyButton=()=>
 {
     const personName="Prerana"

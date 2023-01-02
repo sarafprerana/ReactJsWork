@@ -1,7 +1,6 @@
 import React from 'react'
 import './Anew.css'
 import MyButton from './MyButton';
-import './Avtar.jsx'
 
  function Anew() {
    function gret(name)
