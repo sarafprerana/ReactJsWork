@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Anew from './Components/Anew';
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
           Welcome To GitHub
         
         </a>
-      <Anew />
+    
       </header>
     </div>
   );
