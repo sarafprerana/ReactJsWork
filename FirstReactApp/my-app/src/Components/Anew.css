@@ -1,9 +1,12 @@
 .d {
-    background-color: aquamarine;
-    color: #f71134;
+    /* background-color: aquamarine; */
+    color: rgb(62, 20, 228);
     margin: 2px;
     padding: 5px;
     text-align: center;
     text-shadow: 15px;
-    
+     background: url('./img9.jpg') no-repeat; 
+     background-position: 40px; 
+    background-position-x: center; 
+    /* background-origin: padding-box; */
 }
