@@ -3,7 +3,9 @@ import './Anew.css'
 import MyButton from './MyButton';
 import image from "../image/img2.jpg"
 
+
  function Anew() {
+    
    function gret(name)
   {
     return <h1>Hello {name}</h1>;
@@ -18,7 +20,9 @@ import image from "../image/img2.jpg"
       {gret("World")}
       {getTime()}
       <MyButton />
-      <img src={image} alt="image" width={300} height={100}></img> 
+      
+      <img src={image}  width={300} height={100}></img> 
+  
     </div>
   );
     

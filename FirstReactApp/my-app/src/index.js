@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Anew from './Components/Anew';
+// import Anew from './Components/Anew';
+import Texts from './Components/Texts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Anew/>
+    {/* <Anew/> */}
+    <Texts />
   </React.StrictMode>
 );
 
