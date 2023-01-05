@@ -16,7 +16,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
 import { deepOrange } from '@mui/material/colors';
 
- const Texts=()=>{
+ const Form=()=>{
       const [Fname,setFname]=useState(" ");
       const [Lname,setLname]=useState(" ");
       const [Gender,setGender]=useState(" ");
@@ -97,4 +97,4 @@ import { deepOrange } from '@mui/material/colors';
     </div>
   );
 };
-export default Texts;
+export default Form;
