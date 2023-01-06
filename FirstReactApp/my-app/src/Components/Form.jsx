@@ -20,7 +20,6 @@ import { deepOrange } from '@mui/material/colors';
       const [Fname,setFname]=useState(" ");
       const [Lname,setLname]=useState(" ");
       const [Gender,setGender]=useState(" ");
-      const [Hobbies, setHobbies]=useState(" ");
 
       // const [count, setCount] = useState(0);
 
@@ -33,7 +32,7 @@ import { deepOrange } from '@mui/material/colors';
       fn : Fname,
       ln : Lname,
       Gender : Gender,
-      Hobbies : Hobbies
+    
   };
   console.log(Rec1);
   return (
@@ -51,39 +50,38 @@ import { deepOrange } from '@mui/material/colors';
              {/* <TextField id="Lname" label="Lname" variant="filled" onChange={(event)=>setLname(event.target.value)}/> */}
          </Grid>
          </Grid>
+         <br />
          {/* <Text2 d={Fname}/> */}
-         <FormControl>
-  <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-
-  <RadioGroup aria-labelledby="demo-radio-buttons-group-label" name="radio-buttons-group" >
-  <Grid container spacing={4}>
-  <Grid item xs={6}>
-    <FormControlLabel value="female" control={<Radio />} defaultValue={Gender} onChange={(event) => setGender(event.target.value)} label="Female"/>
-    </Grid>
-     <Grid item xs={6}>
-        <FormControlLabel value="male" control={<Radio />} defaultValue={Gender} onChange={(event) => setGender(event.target.value)} label="Male" />
-    </Grid>
-    {/* <FormControlLabel value="other" control={<Radio />} label="Other" /> */}
-    </Grid>
-  </RadioGroup>
-</FormControl>
-<br />
+        <FormControl>
+            <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+          <RadioGroup aria-labelledby="demo-radio-buttons-group-label" name="radio-buttons-group" >
+            <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <FormControlLabel value="female" control={<Radio />} defaultValue={Gender} onChange={(event) => setGender(event.target.value)} label="Female"/>
+            </Grid>
+            <Grid item xs={6}>
+              <FormControlLabel value="male" control={<Radio />} defaultValue={Gender} onChange={(event) => setGender(event.target.value)} label="Male" />
+            </Grid>
+            </Grid>
+          </RadioGroup>
+        </FormControl>
+        <br />
 
 <FormGroup>
 
     <FormLabel id="demo-radio-buttons-group-label">Hobbies</FormLabel>
     <Grid container spacing={6}>
   <Grid item xs={6}>
-  <FormControlLabel control={<Checkbox  />}defaultValue={Hobbies} onChange={(event) => setHobbies(event.target.value)}  label="Khokho" />
-  <FormControlLabel control={<Checkbox/>} defaultValue={Hobbies} onChange={(event) => setHobbies(event.target.value)}  label="Cricket" />
+  <FormControlLabel control={<Checkbox  />}  label="Khokho" />
+  <FormControlLabel control={<Checkbox/>}  label="Cricket" />
   </Grid>
   </Grid>
   </FormGroup>
 <br />
  <Grid container spacing={6}>
   <Grid item xs={6}>
-<Button variant="contained">SUBMIT</Button> <br />
-<Button variant="contained" href="https://github.com/sarafprerana/ReactJsWork"> Link</Button>
+<Button variant="contained" href="">SUBMIT</Button> <br />
+<Button variant=""  href="https://github.com/sarafprerana/ReactJsWork"> Link</Button>
 </Grid>
 </Grid> 
 <br />
