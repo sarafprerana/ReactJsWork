@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import Addform from './Components/Addform';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Anew from './Components/Anew';
-import Form from './Components/Form';
+ import Form1 from './Components/Form1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Anew/> */}
-    <Form />
+    {/* <Form /> */}
+    {/* <Addform /> */}
+    <Form1 />
   </React.StrictMode>
 );
 

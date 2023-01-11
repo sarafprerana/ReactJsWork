@@ -24,10 +24,8 @@ import image from "../image/img2.jpg"
       <img src={image}  width={300} height={100}></img> 
   
     </div>
-  );
-    
-    
-}
+  );   
+};
 
 
   
