@@ -9,7 +9,7 @@ const Confirmation=(props) =>{
 
   return (
    <Container maxWidth='md'>
-    <Box sx={{bgcolor:'light',display:'flex',flexDirection:'row',justifyContent:'center'}}>Confirm Your Form</Box>
+    <Box sx={{bgcolor:'light',display:'flex',flexDirection:'row',justifyContent:'center'}}><h3>Confirm Your Form</h3></Box>
     <Box sx={{display:'flex', bgcolor:'aquamarine',padding:5}}>
         <pre>{JSON.stringify(props.form,null,3)}</pre>
         <br />

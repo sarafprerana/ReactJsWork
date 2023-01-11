@@ -11,7 +11,7 @@ const Form1=(props)=> {
     const[lastname, setLastName]=useState("" );
     const [gender, setGender]=useState("" );
     const [age, setAge]=useState(" ");
-    const[devp,setDevp]=useState(" ");
+    const[course,setCourse]=useState(" ");
     // const[checked,setChecked]=useState(" ");
     const [coffee, setCheckBox1] = useState();
     const[coffee2, setCheckBox2]=useState();
@@ -57,9 +57,9 @@ const handleAgeChange=(event)=>{
 };
 
 const handleDevpChange=(event)=>{
-    setDevp(event.target.value)
+    setCourse(event.target.value)
     const form={...completeForm};
-    form.devp=event.target.value;
+    form.course=event.target.value;
     setCompleteForm(form);
 };
 
@@ -100,7 +100,7 @@ const onCheckBox4Change = (event) => {
 
  useEffect(() => {
     setGender('female');
-    setAge(28);
+    setAge(20);
 }, [setGender]);
 
 return (
@@ -153,13 +153,13 @@ return (
                      
                   </Select>
                     <FormControl sx={{width:300,marginLeft:60}}>
-                    <InputLabel id="Devp  ">DeveloperIn</InputLabel>
-                  <Select id="Devp" label="Devp" value={devp} onChange={handleDevpChange}>
+                    <InputLabel id="  ">DeveloperIn</InputLabel>
+                  <Select labelId="course" id="course" label="course" value={course} onChange={handleDevpChange}>
                     
-                       <MenuItem value={UI}>UI</MenuItem>
-                       <MenuItem value={DataBase}>DataBase</MenuItem>
-                       <MenuItem value={3}>DevOps</MenuItem>
-                       <MenuItem value={4}>API</MenuItem>
+                       <MenuItem value={course}>UI</MenuItem>
+                       <MenuItem value={course}>DataBase</MenuItem>
+                       <MenuItem value={course}>DevOps</MenuItem>
+                       <MenuItem value={course}>API</MenuItem>
                      
                   </Select>
                   </FormControl>
@@ -174,7 +174,7 @@ return (
                   Gender: {gender}<br />
                   Age:{age}
              </pre> */}
-             <pre>{JSON.stringify(completeForm,null,3)}</pre>
+             {/* <pre>{JSON.stringify(completeForm,null,3)}</pre> */}
              <Box sx={{marginY: 2,display: "flex",justifyContent: "flex-end",}}>
              <Button variant="contained" onClick={handleSubmit} >SUBMIT</Button> 
 
